@@ -1,0 +1,18 @@
+[cite_start]/* Nguồn: Dựa trên file html.txt [cite: 3, 4, 5, 6] */
+body {
+    font-family: 'Be Vietnam Pro', sans-serif; [cite_start]/* [cite: 2] */
+    background-color: #f8f9fa; [cite_start]/* [cite: 3] */
+}
+
+section {
+    scroll-margin-top: 90px; [cite_start]/* [cite: 4] */
+}
+
+/* CSS cho hiệu ứng xoay icon trong dropdown */
+details[open] > summary .chevron-icon {
+    transform: rotate(180deg); [cite_start]/* [cite: 5] */
+}
+
+summary .chevron-icon {
+    transition: transform 0.2s ease-in-out; [cite_start]/* [cite: 6] */
+}

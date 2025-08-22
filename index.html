@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung tâm Hỗ trợ và Chăm sóc khách hàng</title>
+    
+    <!-- Tích hợp Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tích hợp Google Fonts (Be Vietnam Pro) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tích hợp thư viện icon (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f8f9fa; 
+        }
+        section {
+            scroll-margin-top: 90px;
+        }
+        /* CSS cho hiệu ứng xoay icon trong dropdown */
+        details[open] > summary .chevron-icon {
+            transform: rotate(180deg);
+        }
+        summary .chevron-icon {
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-slate-800 pb-20 md:pb-0">
+
+    <!-- HEADER: Nền xanh, chữ trắng -->
+    <header class="sticky top-0 bg-blue-900 shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo và Tên Trung tâm -->
+                <div class="flex items-center space-x-3">
+                    <img src="https://placehold.co/48x48/FFFFFF/0d3d8c?text=TT" alt="Logo Trung tâm" class="h-12 w-12 rounded-full">
+                    <div>
+                        <h1 class="font-bold text-sm sm:text-base text-white leading-tight">TRUNG TÂM HỖ TRỢ VÀ CHĂM SÓC KHÁCH HÀNG</h1>
+                        <p class="text-xs text-blue-200">Trung tâm Phục vụ hành chính công</p>
+                    </div>
+                </div>
+                
+                <!-- Navigation cho màn hình lớn -->
+                <nav class="hidden md:flex space-x-2">
+                    <a href="#yeu-cau" class="font-semibold text-blue-100 hover:text-white hover:bg-blue-800 px-4 py-2 rounded-md transition">Đăng ký nhận tư vấn</a>
+                    <a href="#danh-muc" class="font-semibold text-blue-100 hover:text-white hover:bg-blue-800 px-4 py-2 rounded-md transition">Thành phần hồ sơ</a>
+                    <a href="#tai-mau" class="font-semibold text-blue-100 hover:text-white hover:bg-blue-800 px-4 py-2 rounded-md transition">Hướng dẫn điền mẫu đơn</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT: Tông màu đỏ-vàng-trắng -->
+    <main class="py-16 sm:py-20">
+        <div class="max-w-4xl mx-auto px-4 space-y-16">
+
+            <!-- PHẦN 1: GỬI YÊU CẦU HỖ TRỢ -->
+            <section id="yeu-cau" class="text-center">
+                <div class="bg-white rounded-xl shadow-lg border p-8">
+                    <div class="flex justify-center items-center mx-auto bg-red-100 text-red-700 w-16 h-16 rounded-full">
+                        <i data-lucide="file-text" class="w-9 h-9"></i>
+                    </div>
+                    <h2 class="mt-6 text-2xl font-bold text-slate-900">1. ĐĂNG KÝ NHẬN TƯ VẤN</h2>
+                    <p class="mt-3 text-slate-600 max-w-2xl mx-auto">Ông/bà có nhu cầu nhận tư vấn, hỗ trợ miễn phí vui lòng bấm vào nút YÊU CẦU TƯ VẤN dưới đây, mô tả về nguồn gốc sử dụng đất và tải lên các giấy tờ có tên trong Mục 2: Danh mục hồ sơ cần thiết.</p>
+                    <div class="mt-8">
+                        <a href="https://forms.gle/qrkNzGBvwsa9jav76" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg hover:shadow-xl transform hover:scale-105">
+                            <i data-lucide="external-link" class="w-5 h-5 mr-3"></i>
+                            TÔI MUỐN ĐĂNG KÝ NHẬN TƯ VẤN
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHẦN 2: DANH MỤC HỒ SƠ CẦN THIẾT (CẬP NHẬT ICON) -->
+            <section id="danh-muc">
+                <div class="bg-white rounded-xl shadow-lg border p-8">
+                    <div class="flex items-center">
+                        <i data-lucide="list-checks" class="w-9 h-9 text-red-700"></i>
+                        <h2 class="ml-4 text-2xl font-bold text-slate-900">2. Danh Mục Hồ Sơ Cần Thiết</h2>
+                    </div>
+                    <p class="mt-3 text-slate-600">Vui lòng chọn đúng trường hợp của ông/bà để xem danh mục hồ sơ tương ứng.</p>
+                    <div class="mt-6 space-y-4">
+                        <!-- Trường hợp 1 -->
+                        <details class="bg-slate-50 p-4 rounded-lg border cursor-pointer group">
+                            <summary class="font-semibold text-lg flex justify-between items-center">
+                                Trường hợp 1: Đăng ký, cấp Giấy chứng nhận cho hộ gia đình, cá nhân, cộng đồng dân cư
+                                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform chevron-icon"></i>
+                            </summary>
+                            <div class="mt-4 border-t pt-4 space-y-4">
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Đơn đăng ký đất đai, tài sản gắn liền với đất </span> theo Mẫu số 15 ban hành kèm theo Nghị định số 151/2025/NĐ-CP. (Bản chính)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Một trong các loại giấy tờ quy định tại Điều 137, khoản 1, khoản 5 Điều 148, khoản 1, khoản 5 Điều 149 Luật Đất đai, sơ đồ nhà ở, công trình xây dựng (nếu có).</span> Để được cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất và không phải nộp tiền sử dụng đất (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Giấy tờ về việc chuyển quyền sử dụng đất và Giấy chứng nhận đã cấp cho phần diện tích tăng thêm</span> Trường hợp thửa đất gốc có giấy tờ về quyền sử dụng đất quy định tại Điều 137 Luật Đất đai mà có phần diện tích đất tăng thêm đã được cấp Giấy chứng nhận (bản sao).</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Giấy tờ về việc nhận thừa kế quyền sử dụng đất theo quy định của pháp luật về dân sự</span> đối với trường hợp nhận thừa kế quyền sử dụng đất chưa được cấp Giấy chứng nhận theo quy định pháp luật về đất đai. (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Giấy tờ về việc nhận thừa kế quyền sử dụng đất theo quy định của pháp luật về dân sự và giấy tờ về việc chuyển quyền sử dụng đất </span> Trường hợp quy định tại khoản 4 Điều 45 Luật Đất đai. (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Giấy tờ liên quan đến xử phạt vi phạm hành chính trong lĩnh vực đất đai</span> đối với trường hợp có vi phạm hành chính trong lĩnh vực đất đai. (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Hợp đồng hoặc văn bản thỏa thuận hoặc quyết định của Tòa án nhân dân về việc xác lập quyền đối với thửa đất liền kề kèm theo sơ đồ thể hiện vị trí, kích thước phần diện tích thửa đất liền kề được quyền sử dụng hạn chế </span>Đối với trường hợp có đăng ký quyền đối với thửa đất liền kề. (Bản chính)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Văn bản xác định các thành viên có chung quyền sử dụng đất của hộ gia đình đang sử dụng đất </span>đối với trường hợp hộ gia đình đang sử dụng đất. (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Mảnh trích đo bản đồ địa chính thửa đất (Nếu có) </span>(Bản chính)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Hồ sơ thiết kế xây dựng công trình đã được cơ quan chuyên môn về xây dựng thẩm định hoặc đã có văn bản chấp thuận kết quả nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng theo quy định của pháp luật về xây dựng </span>đối với trường hợp chứng nhận quyền sở hữu công trình xây dựng trên đất nông nghiệp mà chủ sở hữu công trình không có một trong các loại giấy tờ quy định tại Điều 149 Luật Đất đai hoặc công trình được miễn giấy phép xây dựng theo quy định của pháp luật về xây dựng. (Bản sao) </p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Quyết định xử phạt vi phạm hành chính trong lĩnh vực đất đai; chứng từ nộp phạt của người sử dụng đất </span>đối với trường hợp quy định tại điểm a khoản 6 Điều 25 Nghị định số 101/2024/NĐ-CP. (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Chứng từ thực hiện nghĩa vụ tài chính, giấy tờ liên quan đến việc miễn, giảm nghĩa vụ tài chính về đất đai, tài sản gắn liền với đất (nếu có).</span> (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Giấy tờ về việc chuyển quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất có chữ ký của bên chuyển quyền và bên nhận chuyển quyền</span> đối với trường hợp nhận chuyển quyền sử dụng đất, quyền sở hữu nhà ở, công trình xây dựng mà chưa thực hiện thủ tục chuyển quyền theo quy định của pháp luật. (Bản sao) </p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Văn bản thỏa thuận về việc cấp chung một Giấy chứng nhận</span> đối với trường hợp có nhiều người chung quyền sử dụng đất, chung quyền sở hữu tài sản gắn liền với đất.</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Văn bản về việc đại diện theo quy định của pháp luật về dân sự</span> đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện. (Bản chính)</p></div>
+                        </details>
+                        <!-- Trường hợp 2 -->
+                         <details class="bg-slate-50 p-4 rounded-lg border cursor-pointer group">
+                            <summary class="font-semibold text-lg flex justify-between items-center">
+                                Trường hợp 2: Đăng ký, cấp Giấy chứng nhận lần đầu cho người gốc Việt Nam định cư ở nước ngoài
+                                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform chevron-icon"></i>
+                            </summary>
+                             <div class="mt-4 border-t pt-4 space-y-4">
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Đơn đăng ký đất đai, tài sản gắn liền với đất</span> theo Mẫu số 15 ban hành kèm theo Nghị định số 151/2025/NĐ-CP. (Bản chính)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Một trong các loại giấy tờ quy định tại Điều 137, khoản 1, khoản 5 Điều 148, khoản 1, khoản 5 Điều 149 Luật Đất đai, sơ đồ nhà ở, công trình xây dựng (nếu có).</span> Để được cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất và không phải nộp tiền sử dụng đất (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Giấy tờ về việc nhận thừa kế quyền sử dụng đất theo quy định của pháp luật về dân sự.</span> (Bản chính)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Mảnh trích đo bản đồ địa chính thửa đất (Nếu có)</span>(Bản chính)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Hồ sơ thiết kế xây dựng công trình đã được cơ quan chuyên môn về xây dựng thẩm định hoặc đã có văn bản chấp thuận kết quả nghiệm thu hoàn thành hạng mục công trình, công trình xây dựng theo quy định của pháp luật về xây dựng đối với trường hợp chứng nhận quyền sở hữu công trình xây dựng trên đất nông nghiệp</span> đối với trường hợp chủ sở hữu công trình không có một trong các loại giấy tờ quy định tại Điều 149 Luật Đất đai hoặc công trình được miễn giấy phép xây dựng theo quy định của pháp luật về xây dựng. (Bản sao)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Chứng từ thực hiện nghĩa vụ tài chính, giấy tờ liên quan đến việc miễn, giảm nghĩa vụ tài chính về đất đai, tài sản gắn liền với đất</span> (Nếu có)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Văn bản thỏa thuận về việc cấp chung một Giấy chứng nhận</span> đối với trường hợp có nhiều người chung quyền sử dụng đất, chung quyền sở hữu tài sản gắn liền với đất. (Bản chính)</p></div>
+                                <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Văn bản về việc đại diện theo quy định của pháp luật về dân sự </span> đối với trường hợp thực hiện thủ tục đăng ký đất đai, tài sản gắn liền với đất thông qua người đại diện (Bản chính)</p></div>
+                            </div>
+                        </details>
+                        <!-- Trường hợp 3 -->
+                         <details class="bg-slate-50 p-4 rounded-lg border cursor-pointer group">
+                            <summary class="font-semibold text-lg flex justify-between items-center">
+                                Trường hợp 3: Thực hiện thủ tục cấp Giấy chứng nhận, đã có Thông báo xác nhận kết quả đăng ký
+                                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform chevron-icon"></i>
+                            </summary>
+                            <div class="mt-4 border-t pt-4 space-y-4">
+                               <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Đơn đăng ký đất đai, tài sản gắn liền với đất</span> theo Mẫu số 15 ban hành kèm theo Nghị định số 151/2025/NĐ-CP. (Bản chính)</p></div>
+                               <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Thông báo xác nhận kết quả đăng ký đất đai.</span> (Bản sao)</p></div>
+                               <div class="flex items-center p-4 bg-white rounded-lg border shadow-sm"><i data-lucide="check-circle-2" class="w-8 h-8 text-green-600 flex-shrink-0 mr-4"></i><p><span class="font-bold">Văn bản về việc đại diện theo quy định của pháp luật về dân sự </span> đối với trường hợp thực hiện thủ tục thông qua người đại diện (Bản chính)</p></div>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="mt-6 p-4 bg-amber-50 border-l-4 border-amber-400 text-amber-800 rounded-r-lg">
+                        <h4 class="font-bold flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Lưu ý quan trọng</h4>
+                        <p class="mt-2 text-sm">Khi nộp bản sao, Quý khách cần mang theo bản chính để cán bộ tiếp nhận hồ sơ kiểm tra, đối chiếu (trừ trường hợp nộp bản sao đã được công chứng, chứng thực).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHẦN 3: TẢI MẪU -->
+            <section id="tai-mau">
+                <div class="bg-white rounded-xl shadow-lg border p-8">
+                    <div class="flex items-center">
+                        <i data-lucide="folder-down" class="w-9 h-9 text-red-700"></i>
+                        <h2 class="ml-4 text-2xl font-bold text-slate-900">3. Tải đơn đăng ký đất đai theo mẫu số 15</h2>
+                    </div>
+                    <p class="mt-3 text-slate-600">Tải về các mẫu đơn cần dùng. Ông/bà có thể tham khảo các mẫu đã điền sẵn để việc kê khai được chính xác, thuận tiện hơn.</p>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Cột mẫu trống -->
+                        <div>
+                            <h3 class="font-semibold text-lg mb-4 text-center">Mẫu trống (để điền và nộp kèm hồ sơ)</h3>
+                            <div class="space-y-3">
+                                <a href="https://docs.google.com/document/d/146kKctn7nLyizalswbb2pgSZXpJ6xzv6/export?format=docx" class="flex items-center w-full bg-slate-100 hover:bg-amber-100 text-slate-800 font-medium p-4 rounded-lg transition">
+                                    <i data-lucide="file-type-2" class="w-6 h-6 mr-3 text-red-600"></i>
+                                    <span class="flex-1">1. Đơn đăng ký đất đai (Mẫu số 15)</span>
+                                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
+                                </a>
+                                <a href="#" class="flex items-center w-full bg-slate-100 hover:bg-amber-100 text-slate-800 font-medium p-4 rounded-lg transition">
+                                    <i data-lucide="file-type-2" class="w-6 h-6 mr-3 text-red-600"></i>
+                                    <span class="flex-1">2. Đơn đăng ký danh sách cá nhân sử dụng chung thửa đất (Mẫu số 15a) </span>
+                                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
+                                </a>
+                                <a href="#" class="flex items-center w-full bg-slate-100 hover:bg-amber-100 text-slate-800 font-medium p-4 rounded-lg transition">
+                                    <i data-lucide="file-type-2" class="w-6 h-6 mr-3 text-red-600"></i>
+                                    <span class="flex-1">3. Đơn đăng ký danh sách tài sản gắn liền với đất (Mẫu số 15c)</span>
+                                    <i data-lucide="download" class="w-5 h-5 text-slate-500"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Cột mẫu đã điền -->
+                        <div>
+                            <h3 class="font-semibold text-lg mb-4 text-center">Mẫu đã điền (để tham khảo)</h3>
+                            <div class="space-y-3">
+                                 <a href="#" class="flex items-center w-full bg-slate-100 hover:bg-amber-100 text-slate-800 font-medium p-4 rounded-lg transition">
+                                    <i data-lucide="file-check-2" class="w-6 h-6 mr-3 text-green-600"></i>
+                                    <span class="flex-1">1. Đơn đăng ký đất đai (Mẫu số 15)</span>
+                                    <i data-lucide="eye" class="w-5 h-5 text-slate-500"></i>
+                                </a>
+                                <a href="#" class="flex items-center w-full bg-slate-100 hover:bg-amber-100 text-slate-800 font-medium p-4 rounded-lg transition">
+                                    <i data-lucide="file-check-2" class="w-6 h-6 mr-3 text-green-600"></i>
+                                    <span class="flex-1">2. Đơn đăng ký danh sách cá nhân sử dụng chung thửa đất (Mẫu số 15a)</span>
+                                    <i data-lucide="eye" class="w-5 h-5 text-slate-500"></i>
+                                </a>
+                                 <a href="#" class="flex items-center w-full bg-slate-100 hover:bg-amber-100 text-slate-800 font-medium p-4 rounded-lg transition">
+                                    <i data-lucide="file-check-2" class="w-6 h-6 mr-3 text-green-600"></i>
+                                    <span class="flex-1">3. Đơn đăng ký danh sách tài sản gắn liền với đất (Mẫu số 15c)</span>
+                                    <i data-lucide="eye" class="w-5 h-5 text-slate-500"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-50">
+        <div class="flex justify-around">
+            <a href="#yeu-cau" class="flex flex-col items-center text-center text-slate-600 hover:text-red-700 p-2 w-full">
+                <i data-lucide="file-text" class="w-6 h-6"></i>
+                <span class="text-xs mt-1">Đăng ký nhận tư vấn</span>
+            </a>
+            <a href="#danh-muc" class="flex flex-col items-center text-center text-slate-600 hover:text-red-700 p-2 w-full">
+                <i data-lucide="list-checks" class="w-6 h-6"></i>
+                <span class="text-xs mt-1">Thành phần hồ sơ</span>
+            </a>
+            <a href="#tai-mau" class="flex flex-col items-center text-center text-slate-600 hover:text-red-700 p-2 w-full">
+                <i data-lucide="folder-down" class="w-6 h-6"></i>
+                <span class="text-xs mt-1">Hướng dẫn điền mẫu đơn</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- FOOTER: Giữ tông màu xanh-trắng -->
+    <footer id="lien-he" class="bg-blue-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <div class="text-center mb-10">
+                <h3 class="text-2xl font-bold">TRUNG TÂM HỖ TRỢ VÀ CHĂM SÓC KHÁCH HÀNG</h3>
+                <p class="text-blue-200 mt-2">Đơn vị trực thuộc Trung tâm Phục vụ hành chính công thành phố Hà Nội</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="font-bold text-lg text-amber-300">Địa chỉ</h4>
+                    <p class="mt-2 text-blue-100">258 Võ Chí Công, phường Tây Hồ, thành phố Hà Nội</p>
+                    <h4 class="mt-6 font-bold text-lg text-amber-300">Giờ làm việc</h4>
+                    <p class="mt-2 text-blue-100">Sáng: 07:30 - 11:30 | Chiều: 13:30 - 17:00</p>
+                    <p class="mt-1 text-blue-100">(Làm việc từ Thứ 2 đến Thứ 6)</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg text-amber-300">Thông tin liên hệ</h4>
+                    <p class="mt-2 text-blue-100">Tổng đài: <a href="tel:024 1022" class="hover:underline">024 1022 nhánh 7 và 8</a></p>
+                    <p class="mt-1 text-blue-100">Email: <a href="mailto:tthtcskh_tthcc@hanoi.gov.vn" class="hover:underline">tthtcskh_tthcc@hanoi.gov.vn</a></p>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-blue-800 pt-6 text-center text-sm text-blue-200">
+                <p>&copy; 2024 Bản quyền thuộc về Trung tâm Hỗ trợ và Chăm sóc khách hàng.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
